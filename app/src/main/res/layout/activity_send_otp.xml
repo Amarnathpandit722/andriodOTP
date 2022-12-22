@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    tools:context=".Send_OTP_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity='center_horizontal'
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="50dp"
+            android:src='@drawable/ic_send_image'
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/otp_verification"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/purple_700"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/we_will"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:textColor="@color/teal_200"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mobile"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/cyan"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:gravity="center"
+            android:orientation='horizontal'>
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <EditText
+                android:id='@+id/inputMobile'
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="12345678"
+                android:imeOptions='actionDone'
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop='15dp'
+            android:layout_marginEnd="80dp"
+            android:background="@color/divider"
+
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/buttonGetOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Get OTP"
+                android:backgroundTint="#FEFBDE"
+                android:backgroundTintMode="multiply"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle='bold'
+
+
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+
+                />
+
+
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>

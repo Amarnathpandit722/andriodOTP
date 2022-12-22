@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidOTP</string>
+    <string name="otp_verification">OTP Verfication</string>
+
+    <string name="we_will">We Will send you One Time Password on this Mobile Number</string>
+    <string name="mobile">Enter Mobile Number Here</string>
+
+</resources>
